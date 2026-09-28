@@ -50,7 +50,7 @@ export default function Home() {
         <div className="hero-grid">
           <div className="hero-copy">
             <h1 id="hero-heading">
-              داراییات را به فرصت تبدیل کن
+              دارایی ات را به فرصت تبدیل کن
               <br />
               <span className="hot">
                 <span className="ltr">vex</span> شبکه هوشمند تبادل ارزش
