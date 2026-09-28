@@ -50,14 +50,17 @@ export default function Home() {
         <div className="hero-grid">
           <div className="hero-copy">
             <h1 id="hero-heading">
-              معاوضه کنید.
+              داراییات را به فرصت تبدیل کن
               <br />
-              نقدینگی <span className="hot">نگه دارید.</span>
+              <span className="hot">
+                <span className="ltr">vex</span> شبکه هوشمند تبادل ارزش
+              </span>
             </h1>
 
             <p className="lead">
-              {site.name} به کسب‌وکارها کمک می‌کند کالا، خدمات و مازاد تولید خود را بدون
-              خروج نقدینگی، با بنگاه‌هایی که دقیقاً به همان نیاز دارند مبادله کنند.
+              وقتی پول محدود است، ارزش باید جریان پیدا کند.
+              <br />
+              وکس کالا و دارایی شما را با مسیرهای جدید معامله و یا تهاتر آشنا می‌کند.
             </p>
 
             <div className="hero-actions">
