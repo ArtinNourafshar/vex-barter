@@ -1,0 +1,870 @@
+/* ------------------------------------------------------------------
+   بلوک‌ها — هیرو، کارت‌ها، سطرها، فراخوانی، FAQ، تماس
+------------------------------------------------------------------ */
+
+/* ---------- هیرو ---------- */
+
+.hero {
+  padding-top: 64px;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.hero-note {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  opacity: 0.6;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 24px;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+  padding: 8px 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 .hot {
+  color: var(--ember);
+}
+
+.hero-copy p.lead {
+  max-width: 460px;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 1.95;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+/* ---------- هنر هیرو ---------- */
+
+.hero-art {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: var(--radius);
+  background: var(--sulfur);
+}
+
+.hero-art::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--ember);
+  -webkit-mask-image: linear-gradient(315deg, transparent 24%, #000 84%);
+  mask-image: linear-gradient(315deg, transparent 24%, #000 84%);
+}
+
+.halftone {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--ink) 3px, transparent 3.7px);
+  background-size: 12px 12px;
+  -webkit-mask-image: linear-gradient(215deg, #000 25%, transparent 95%);
+  mask-image: linear-gradient(215deg, #000 25%, transparent 95%);
+}
+
+.art-ring {
+  position: absolute;
+  width: 135%;
+  aspect-ratio: 1;
+  inset-inline-end: -50%;
+  top: 21%;
+  border: 75px solid var(--ink);
+  border-radius: 50%;
+  opacity: 0.8;
+  transform: rotate(25deg);
+  -webkit-mask-image: radial-gradient(circle, #000 2px, transparent 2.8px);
+  mask-image: radial-gradient(circle, #000 2px, transparent 2.8px);
+  -webkit-mask-size: 7px 7px;
+  mask-size: 7px 7px;
+}
+
+.art-top,
+.art-bottom {
+  position: absolute;
+  inset-inline: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--ink);
+}
+
+.art-top {
+  top: 28px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.art-bottom {
+  bottom: 28px;
+  align-items: flex-end;
+}
+
+.art-title {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1.2;
+}
+
+.art-plus {
+  font-size: 44px;
+  line-height: 1;
+}
+
+/* ---------- نوار اصول ---------- */
+
+.principles {
+  display: grid;
+  grid-template-columns: 1.3fr repeat(3, 1fr);
+  align-items: center;
+  gap: 24px;
+  padding: 32px 40px;
+  background: var(--limestone);
+  border-radius: var(--radius);
+  margin-top: 32px;
+}
+
+.principles > p {
+  max-width: 240px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.principle {
+  border-inline-start: var(--hair);
+  padding-inline-start: 28px;
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(18px, 2vw, 26px);
+  line-height: 1.4;
+}
+
+/* ---------- سرصفحه بخش ---------- */
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 36px;
+}
+
+.section-head .eyebrow {
+  margin-bottom: 18px;
+}
+
+.section-head > p {
+  max-width: 400px;
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+/* ---------- کارت‌های ویژگی ---------- */
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.feature-card {
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: var(--radius);
+  background: var(--limestone);
+}
+
+.feature-card.featured {
+  background: var(--ember);
+  color: var(--ink);
+}
+
+.feature-card.violet {
+  background: var(--violet);
+  color: var(--chalk);
+  border: var(--hair);
+}
+
+.feature-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.number {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.feature-card h3 {
+  margin-top: auto;
+  padding-top: 48px;
+}
+
+.feature-card p {
+  margin-top: 16px;
+  font-size: 14.5px;
+  line-height: 1.9;
+  max-width: 340px;
+}
+
+/* ---------- سطرهای مورداستفاده ---------- */
+
+.use-cases {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  padding-top: 48px;
+  border-top: var(--hair);
+}
+
+.use-cases h2 {
+  margin-top: 24px;
+}
+
+.use-case-intro {
+  margin-top: 24px;
+  max-width: 380px;
+}
+
+.case-row {
+  display: grid;
+  grid-template-columns: 44px 1fr 32px;
+  gap: 16px;
+  align-items: start;
+  padding: 28px 0;
+  border-bottom: var(--hair);
+}
+
+.case-row:first-child {
+  padding-top: 0;
+}
+
+.case-row .number {
+  padding-top: 9px;
+}
+
+.case-row p {
+  margin-top: 10px;
+  font-size: 14.5px;
+  line-height: 1.9;
+  max-width: 460px;
+}
+
+.case-row .arrow {
+  color: var(--ember);
+  padding-top: 6px;
+}
+
+/* ---------- سطرهای گام‌ها ---------- */
+
+.steps {
+  border-top: var(--hair);
+  padding-top: 8px;
+}
+
+.step-row {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 30px 0;
+  border-bottom: var(--hair);
+}
+
+.step-row .step-num {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--ember);
+}
+
+.step-row h3 {
+  font-size: clamp(20px, 2.2vw, 28px);
+}
+
+.step-row p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.95;
+  max-width: 720px;
+}
+
+/* ---------- باند تاریک (فراخوانی) ---------- */
+
+.cta-band {
+  padding: 56px;
+  background: var(--limestone);
+  color: var(--chalk);
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.cta-band h2 {
+  margin-top: 22px;
+}
+
+.cta-band h2 span {
+  color: var(--ember);
+}
+
+.cta-band .cta-copy > p {
+  margin-top: 24px;
+  max-width: 460px;
+  font-size: 15.5px;
+  line-height: 1.95;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.cta-band :focus-visible {
+  outline-color: var(--sulfur);
+}
+
+.cta-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.cta-points li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding-bottom: 14px;
+  border-bottom: 1.5px dotted rgba(255, 255, 255, 0.28);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.cta-points li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cta-points .k {
+  font-family: var(--display);
+  font-weight: 900;
+  color: var(--sulfur);
+  flex-shrink: 0;
+  min-width: 34px;
+}
+
+/* ---------- سرصفحه صفحات ---------- */
+
+.page-hero {
+  padding-top: 72px;
+}
+
+.page-hero .tag {
+  margin-bottom: 22px;
+}
+
+.page-hero .eyebrow {
+  margin-bottom: 22px;
+}
+
+.page-hero p.lead {
+  margin-top: 26px;
+  max-width: 640px;
+  font-size: 17px;
+  line-height: 2;
+}
+
+.page-hero .page-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.page-rule {
+  margin-top: 44px;
+  border-top: var(--hair);
+}
+
+/* ---------- شبکه سه‌ستونی کارت ---------- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card-grid.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-grid.four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.panel {
+  background: var(--limestone);
+  border-radius: var(--radius);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.panel.accent {
+  background: var(--ember);
+  color: var(--ink);
+}
+
+.panel.dark {
+  background: var(--ink);
+  color: var(--chalk);
+  border: var(--hair);
+}
+
+.panel .panel-num {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  opacity: 0.7;
+}
+
+.panel h3 {
+  font-size: clamp(20px, 2.1vw, 26px);
+  line-height: 1.4;
+}
+
+.panel p {
+  font-size: 14.5px;
+  line-height: 1.95;
+}
+
+.panel .feature-icon {
+  margin-bottom: 6px;
+}
+
+/* ---------- دوستونه متنی ---------- */
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.split .split-body {
+  display: grid;
+  gap: 18px;
+  font-size: 15.5px;
+  line-height: 2.05;
+}
+
+.split .split-body p:first-child {
+  font-size: 17px;
+}
+
+/* ---------- چیپ‌های حوزه ---------- */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 20px;
+  border-radius: var(--pill);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.chip.filled {
+  background: var(--limestone);
+  border-color: transparent;
+}
+
+.chip.sulfur {
+  background: var(--sulfur);
+  border-color: transparent;
+  color: var(--ink);
+}
+
+/* ---------- بلوک‌های اطلاعات ---------- */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.info-card {
+  background: var(--limestone);
+  border-radius: var(--radius);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 190px;
+}
+
+.info-card .info-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  opacity: 0.55;
+}
+
+.info-card .info-value {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(18px, 1.7vw, 23px);
+  line-height: 1.55;
+  margin-top: auto;
+  word-break: break-word;
+}
+
+.info-card a.info-value:hover {
+  color: var(--ember);
+}
+
+.info-card .info-note {
+  font-size: 13.5px;
+  line-height: 1.8;
+  opacity: 0.7;
+}
+
+/* ---------- آکاردئون FAQ ---------- */
+
+.faq-list {
+  border-top: var(--hair);
+}
+
+.faq-item {
+  border-bottom: var(--hair);
+}
+
+.faq-q {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 26px 0;
+  background: transparent;
+  border: 0;
+  text-align: start;
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(17px, 1.7vw, 22px);
+  line-height: 1.6;
+  color: var(--chalk);
+}
+
+.faq-q .faq-mark {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--chalk);
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.faq-item.open .faq-mark {
+  background: var(--ember);
+  transform: rotate(45deg);
+}
+
+.faq-a {
+  padding: 0 0 28px;
+  max-width: 780px;
+  font-size: 15.5px;
+  line-height: 2.05;
+}
+
+/* ---------- چک‌لیست ---------- */
+
+.check-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.check-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-size: 15.5px;
+  line-height: 1.9;
+}
+
+.check-list li::before {
+  content: '';
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  margin-top: 11px;
+  border-radius: 50%;
+  background: var(--ember);
+}
+
+/* ---------- نوار عددی ---------- */
+
+.stat-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  background: var(--limestone);
+  border-radius: var(--radius);
+  padding: 36px 40px;
+}
+
+.stat {
+  border-inline-start: var(--hair);
+  padding-inline-start: 24px;
+}
+
+.stat:first-child {
+  border-inline-start: 0;
+  padding-inline-start: 0;
+}
+
+.stat .stat-k {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.2;
+  color: var(--ember);
+}
+
+.stat .stat-v {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ---------- ریسپانسیو بلوک‌ها ---------- */
+
+@media (max-width: 1100px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-art {
+    min-height: 480px;
+  }
+
+  .feature-card {
+    padding: 30px;
+  }
+
+  .principles {
+    padding: 28px;
+    gap: 16px;
+  }
+
+  .principle {
+    padding-inline-start: 18px;
+  }
+
+  .use-cases {
+    gap: 36px;
+  }
+
+  .cta-band {
+    padding: 40px;
+    gap: 32px;
+  }
+
+  .card-grid.four,
+  .info-grid,
+  .stat-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat:nth-child(3) {
+    border-inline-start: 0;
+    padding-inline-start: 0;
+  }
+
+  .split {
+    gap: 36px;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-grid,
+  .card-grid.two,
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .use-cases,
+  .split,
+  .cta-band {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding-top: 40px;
+  }
+
+  .page-hero {
+    padding-top: 48px;
+  }
+
+  .hero-note {
+    display: none;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy p.lead {
+    margin-top: 22px;
+    font-size: 16.5px;
+  }
+
+  .hero-art {
+    min-height: 360px;
+  }
+
+  .art-title {
+    font-size: 34px;
+  }
+
+  .art-plus {
+    font-size: 34px;
+  }
+
+  .principles {
+    grid-template-columns: 1fr 1fr;
+    gap: 26px 16px;
+  }
+
+  .principles > p {
+    grid-column: 1 / -1;
+    max-width: none;
+  }
+
+  .feature-card {
+    padding: 32px;
+  }
+
+  .feature-card h3 {
+    padding-top: 34px;
+  }
+
+  .case-row {
+    grid-template-columns: 36px 1fr;
+  }
+
+  .case-row .arrow {
+    display: none;
+  }
+
+  .step-row {
+    grid-template-columns: 46px 1fr;
+    gap: 14px;
+  }
+
+  .step-row .step-num {
+    font-size: 26px;
+  }
+
+  .cta-band {
+    padding: 32px 24px;
+  }
+
+  .card-grid.four,
+  .info-grid,
+  .stat-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .stat,
+  .stat:nth-child(3) {
+    border-inline-start: 0;
+    padding-inline-start: 0;
+    border-top: var(--hair);
+    padding-top: 18px;
+  }
+
+  .stat:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .panel {
+    padding: 30px;
+  }
+}

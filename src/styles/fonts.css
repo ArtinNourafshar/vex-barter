@@ -1,0 +1,94 @@
+/* ------------------------------------------------------------------
+   IRANYekan — فونت فارسی ایران یکان
+   منبع: jsDelivr CDN (بسته npm @alibaba-aero/iranyekan)
+   ۸ وزن + فونت پشتیبان لاتین برای اعداد و عبارت‌های انگلیسی
+------------------------------------------------------------------ */
+
+@font-face {
+  font-family: 'IRANYekan';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src:
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/woff/iranyekanwebthinfanum.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/ttf/iranyekanwebthinfanum.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/woff/iranyekanweblightfanum.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/ttf/iranyekanweblightfanum.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/woff/iranyekanwebregularfanum.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/ttf/iranyekanwebregularfanum.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/woff/iranyekanwebmediumfanum.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/ttf/iranyekanwebmediumfanum.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/woff/iranyekanwebboldfanum.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/ttf/iranyekanwebboldfanum.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src:
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/woff/iranyekanwebextraboldfanum.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/ttf/iranyekanwebextraboldfanum.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/woff/iranyekanwebblackfanum.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/ttf/iranyekanwebblackfanum.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  font-style: normal;
+  font-weight: 950;
+  font-display: swap;
+  src:
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/woff/iranyekanwebextrablackfanum.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/@alibaba-aero/iranyekan@0.0.1/fonts/ttf/iranyekanwebextrablackfanum.ttf') format('truetype');
+}
+
+/* پشتیبان لاتین برای واژه‌های انگلیسی و اعداد دو رقمی بالا */
+@font-face {
+  font-family: 'Vex Latin';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/fontsource/fonts/dm-sans:vf@latest/latin-wght-normal.woff2') format('woff2-variations');
+}

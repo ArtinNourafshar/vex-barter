@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------------
+   توکن‌های طراحی — پالت تیره سبز/کهربایی
+   پس‌زمینه: سرمه‌ای #0f172a
+   تأکید اصلی: سبز زمردی #10b981
+   متن: سفید #ffffff
+   تأکید ثانویه: کهربایی #f59e0b
+------------------------------------------------------------------ */
+
+:root {
+  --ember: #10b981;
+  --violet: #0f172a;
+  --sulfur: #f59e0b;
+  --limestone: rgba(255, 255, 255, 0.05);
+  --pumice: #0f172a;
+  --ink: #0f172a;
+  --chalk: #ffffff;
+
+  --display: 'IRANYekan', 'Vex Latin', Tahoma, 'Segoe UI', sans-serif;
+  --body: 'IRANYekan', 'Vex Latin', Tahoma, 'Segoe UI', sans-serif;
+
+  --radius: 40px;
+  --radius-sm: 24px;
+  --pill: 800px;
+
+  --wrap: 1280px;
+  --gutter: 64px;
+
+  --hair: 1.5px dotted rgba(255, 255, 255, 0.28);
+}
